@@ -1,0 +1,48 @@
+{
+  "name": "vscode-diff-clipboard",
+  "displayName": "VS Code Diff Clipboard",
+  "description": "Open files and diff with clipboard via URI",
+  "version": "0.1.17",
+  "publisher": "MissionSquad",
+  "repository": {
+    "type": "git",
+    "url": "github.com/MissionSquad/vscode-diff-clipboard"
+  },
+  "bugs": "https://github.com/missionsquad/vscode-diff-clipboard/issues",
+  "homepage": "https://github.com/missionsquad/vscode-diff-clipboard",
+  "author": "Jayson Jacobs",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "activationEvents": [
+    "onUri",
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-diff-clipboard.diffWithClipboard",
+        "title": "Diff With Clipboard"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "^14.14.37",
+    "typescript": "^4.3.5"
+  }
+}
