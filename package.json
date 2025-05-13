@@ -2,7 +2,7 @@
   "name": "vscode-diff-clipboard",
   "displayName": "VS Code Diff Clipboard",
   "description": "Open files and diff with clipboard via URI",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "publisher": "MissionSquad",
   "repository": {
     "type": "git",
@@ -10,6 +10,7 @@
   },
   "bugs": "https://github.com/missionsquad/vscode-diff-clipboard/issues",
   "homepage": "https://github.com/missionsquad/vscode-diff-clipboard",
+  "icon": "images/One-Shot-AppIcon-OS-128x128.png",
   "author": "Jayson Jacobs",
   "engines": {
     "vscode": "^1.60.0"
